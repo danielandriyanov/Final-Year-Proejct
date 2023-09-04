@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+
+body {
+	width: 100%;
+}
+
+
+.navbar {
+	justify-content: space-between;
+	padding: 20px 80px;
+	display: flex;
+	background-color: white;
+	color: #BD9E81;
+	align-items: center;
+	box-shadow: 0 5px 15px  rgba(0,0,0,0.06);
+}
+
+#nav {
+	display: flex;
+	align-items: center;
+	justify-content: center;	
+}
+
+#nav li{
+	padding: 10px 20px;
+	position: relative;
+	list-style: none;
+}
+
+#nav li a{
+	text-decoration: none;
+	font-size: 16px;
+	color: #BD9E81;
+	transition: 0.3s ease;
+	font-family: "Lucida Console", monospace;
+}
+
+#nav li a:hover,
+#nav li a.active{
+	color: #674d3c;	
+}
+
+.logo{
+	height: 150px;
+	width: 150px;
+	transition: all 0.3s ease-out;	
+}
+
+/*Footer design into columns */
+.footer{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(100px,auto));
+	gap: 1.5rem;
+	margin-bottom: 30px;
+	margin-top: 80px;
+	background-color: #f5f5f5;
+}
+/* Design for all heading 2 located in box1 */
+.box1 h2{
+	font-size: 1.3rem;
+	font-weight: 600 bold;
+	margin-bottom: 10px;
+	margin-top: 15px;
+	color: #674d3c;
+	text-transform:uppercase;
+	margin-left: 100px;
+	
+}
+/* Design for all paragraphs inside box1 */
+.box1 p{
+	font-weight: 1.1rem;
+	font-weight: bold;
+	color: black;
+	text-decoration: none;
+	margin-left: 100px;
+	
+}
+/* Social media icon class display */
+.social-media-icon{
+	display: flex;
+	align-items: center;
+	column-gap: 0.3rem;
+	margin-left: 110px;
+	
+}
+/* all icons inside social media icon class design */
+.social-media-icon a .fa{
+	font-size: 23px;
+	margin-top: 20px;
+	margin-left: 20px;
+
+}
+/* Remove bullet point */
+ul{
+	list-style-type: none;
+	margin: 0;
+    padding: 0;
+}
+/* design for li in box1 */
+.box1  li a{
+	color: black;
+	text-decoration: none;
+	margin-top: 15px;
+	margin-left: 3px;
+	font-weight: bold;
+	font-size: 1.1rem;
+	row-gap: 0.5rem;
+	margin-left: 100px;	
+}
+/* Display for class contact */
+.contact{
+	display: flex;
+	flex-direction: column;
+	row-gap: 0.5rem;	
+}
+
+/* Display for span in class contact */
+.contact span{
+	display: flex;
+	align-items: center;
+}
+
+/* design for icons  in class contact */
+.contact i{
+	font-size: 20px;
+	color: black;
+	margin-right: 5px;
+	margin-left: 100px;
+
+}
+
+
+
+	
+
+
+
+
+
+
+
+	

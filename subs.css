@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+/* For the whole page */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: content-box;
+	font-family: arial, sans-serif;	
+}
+/* Heading 2 placement and font sizes */
+h2{
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 40px;
+	margin-top: 40px;
+	color: #674d3c;
+	
+}
+/* Design for class plan, creating 3 sepreate columns  */
+.plan {
+	width: 30%;
+	margin: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	flex-wrap: wrap;
+	background-color: #674d3c;
+    padding: 3rem;
+    text-align: center;
+    display: absolute;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px;
+    width: 60rem;
+    gap: 5rem;
+    color: white;
+}
+
+/* Uppercase and size for font heading 3 inside class plan */
+.plan h3 {
+	margin: 0;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+/* Paragraph inside class plan design */
+.plan p {
+	margin-top: 15px;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+
+/* Design for button called ad to cart */
+.add-to-cart {
+	background-color: #BD9E81;
+	color: white;
+	border: none;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform:uppercase;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+/* When passing the mouse on top of button color changes*/
+.add-to-cart:hover {
+	background-color: #674d3c;
+}
+
+
+
+

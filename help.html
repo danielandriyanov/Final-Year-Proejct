@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAQ</title>
+</head>
+<link rel = "stylesheet" href = "style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel = "stylesheet" href = "help.css">
+</head>
+<body>
+<!-- Navbar menu -->
+<header class ="header">
+<nav class = "navbar">
+<a href = "#"><img src = "cloud coffee1.png" class = "logo" alt =""></a>
+  <div>
+  <ul id = "nav">
+    <li><a class = "active" href = "index.html">HOME</a></li>
+    <li><a href = "shop.html">SHOP</a></li>
+    <li><a href = "subscription.html">SUBSCRIPTION</a></li>
+    <li><a href = "about.html">ABOUT</a></li>
+    <li><a href = "help.html">HELP</a></li>
+    <li><a href = "contact.html">CONTACT US</a></li>
+</ul>
+</div>
+</nav>
+</header>
+<!-- Quenstions and answers with button icon -->
+<div class = "menu"> 
+<h2>Frequently Asked Questions</h2>
+<div class = "ship">
+<h3>Shipping</h3>
+<button class = "question">How long will my order take to arrive? 
+<i class="fa fa-angle-down" aria-hidden="true"></i>
+</button>
+<div class = "answer">
+<p>If you order before 7pm on a weekday, the order will arrive next day. </p>
+</div>
+<button class = "question">How much is shipping? 
+<i class="fa fa-angle-down" aria-hidden="true"></i>
+</button>
+<div class = "answer">
+<p>We provide free Royal Mail tracked shipping on all UK orders with a basket value of over 40£.<br> If it is total value is under 40£ then shipping is a fixed fee of 5£. </p>
+</div>
+<button class = "question">Where is my tracking number?
+<i class="fa fa-angle-down" aria-hidden="true"></i>
+</button>
+<div class = "answer">
+<p>You can find your tracking number on the shipping confirmation email.<br>The link provided will direct to Royal Mails Tracking website once it is clicked.</p>
+</div>
+<button class = "question">Do you ship internationally?? 
+<i class="fa fa-angle-down" aria-hidden="true"></i>
+</button>
+<div class = "answer">
+<p>No, at the moment we only deliver anywhere within the United Kingdom.</p>
+</div>
+</div>
+
+<div class = "order">
+<h3>Ordering</h3>
+<button class = "question">There is an error with my order
+<i class="fa fa-angle-down" aria-hidden="true"></i>
+</button>
+<div class = "answer">
+<p>If you have received the wrong order, please contact our Customer Service team on cloud-coffee@gmail.com. <br>One of our team member will resolve this issue for you  </p>
+</div>
+<button class = "question">I have made a mistake on my order, can i cancel it?
+<i class="fa fa-angle-down" aria-hidden="true"></i>
+</button>
+<div class = "answer">
+<p>Unfortunately no, when you receive the order you can return if to us fo free and place a new order.<br> View return policy. </p>
+</div>
+<button class = "question">Can i reset my password?
+<i class="fa fa-angle-down" aria-hidden="true"></i>
+</button>
+<div class = "answer">
+<p> Yes by clicking on forgot password on the login page.</p>
+</div>
+</div>
+
+<div class = "subs">
+<h3>Subscriptions</h3>
+<button class = "question">How do the coffee subscription work?
+<i class="fa fa-angle-down" aria-hidden="true"></i>
+</button>
+<div class = "answer">
+<p>Our subscription is easy to use. To get started simply click on the subscription page<br>then choose which kind of coffee you would like to receive<br>following with the frequency(days/weeks)
+ <br> then pick the grind size that suit you. Once the checkout is complete your account <br>will have a subscription. It is possible to cancel any time.</p>
+</div>
+<button class = "question">How much coffee should i order?
+<i class="fa fa-angle-down" aria-hidden="true"></i>
+</button>
+<div class = "answer">
+<p>It depends on the frequency consumption.</p>
+</div>
+<button class = "question">Can i reset my password?
+<i class="fa fa-angle-down" aria-hidden="true"></i>
+</button>
+<div class = "answer">
+<p> Yes by clicking on forgot password on the login page.</p>
+</div>
+</div>
+
+<div class = "coffee">
+<h3>Coffee</h3>
+<button class = "question">There is an error with my order
+<i class="fa fa-angle-down" aria-hidden="true"></i>
+</button>
+<div class = "answer">
+<p>If you have received the wrong order, please contact our Customer Service team on cloud-coffee@gmail.com. <br>One of our team member will resolve this issue for you  </p>
+</div>
+<button class = "question">I have made a mistake on my order, can i cancel it
+<i class="fa fa-angle-down" aria-hidden="true"></i>
+</button>
+<div class = "answer">
+<p>Unfortunately no, when you receive the order you can return if to us fo free and place a new order.<br> View return policy. </p>
+</div>
+<button class = "question">Can i reset my password?
+<i class="fa fa-angle-down" aria-hidden="true"></i>
+</button>
+<div class = "answer">
+<p> Yes by clicking on forgot password on the login page.</p>
+</div>
+</div>
+</div>
+<!-- script to click on menu to show answer -->
+<script>
+var acc = document.getElementsByClassName("question");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var answer = this.nextElementSibling;
+    if (answer.style.display === "block") {
+      answer.style.display = "none";
+    } else {
+      answer.style.display = "block";
+    }
+  });
+}
+</script>
+
+<!--Footer located at the bottom of the page-->
+      <div class = "footer">
+      <!-- Social media box bottom left -->
+      <div class = "box1">
+      <h2>Cloud Coffee</h2>
+      <p>Follow us on our social <br> media below!</p>
+      <div class = "social-media-icon">
+      <a href ="#"><i class ="fa fa-facebook" aria-hidden="true" style="color:black"></i></a>
+      <a href ="#"><i class ="fa fa-instagram" aria-hidden="true" style="color:black"></i></a>
+      <a href ="#"><i class ="fa fa-twitter" aria-hidden="true" style="color:black"></i></a>
+      </div>
+      </div>
+      <!-- Guides box after social media -->
+      <div class = "box1">
+      <h2>Guides</h2>
+      <ul>
+     <li><a href = "#">Careers</a></li>
+     <li><a href = "#">Espresso</a></li>
+     <li><a href = "#">Rewards</a></li>
+     <li><a href = "#">FAQ</a></li>
+     </ul>
+      </div>
+      <!-- Contact information box -->
+      <div class = "box1">
+      <h2>Contact Us</h2>
+      <div class = "contact">
+      <span><i class = "fa fa-map-marker"></i>3 New Street, London, E21 7SF</span>
+      <br>
+      <span><i class = "fa fa-phone"></i>01632 960650</span>
+      <br>
+      <span><i class = "fa fa-envelope"></i>info@cloud-coffee@gmail.com</span>
+      </div>
+      </div>
+      </div>
+
+</body>
+</html>
